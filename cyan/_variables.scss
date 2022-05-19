@@ -1,7 +1,13 @@
+//mobile or pc
+$isPC:true !default;
 //grid
 $body-bg:               #fff !default;
-$container_padding:.133333333rem;
-$container_width:10rem;
+$container_padding:10px;//on pc
+$container_width:800px;//on pc
+@if(not $isPC){
+	$container_padding:.133333333rem;
+	$container_width:10rem;
+};
 //text-color
 $black:              #000 !default;
 $gray-darker:        #222 !default;
@@ -22,8 +28,9 @@ $yellow:             #ff6705 !default;
 $coffee:             #853f3a !default;
 $purple:             #7000C8 !default;
 $gray-color-list:('darker':$gray-darker,'dark':$gray-dark,'light':$gray-light,'lighter':$gray-lighter);
-// $base-color-list:('black':$black,'white':$white,'green':$green,'red':$red,'orange':$orange,'blue':$blue,'yellow':$yellow,'coffee':$coffee,'purple':$purple) !default;
-$base-color-list:('red':$red-list,'yellow':$yellow-list,'blue':$blue-list,'purple':$purple-list,'green':$green-list) !default;
+$base-color-list:('black':$black,'white':$white,'green':$green,'red':$red,'orange':$orange,'blue':$blue,'yellow':$yellow,'coffee':$coffee,'purple':$purple) !default;
+//渐变背景色
+// $base-color-list:('red':$red-list,'yellow':$yellow-list,'blue':$blue-list,'purple':$purple-list,'green':$green-list) !default;
 $font-color-list:('black':$black,'white':$white,'green':$green,'red':$red,'orange':$orange,'blue':$blue,'yellow':$yellow,'coffee':$coffee,'purple':$purple) !default;
 $base-color:$green !default;
 //base font

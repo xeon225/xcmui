@@ -3,6 +3,11 @@
   <div class="fs-18">Colors</div>
   <div class="text-dark fs-10">Brand color/Text color/Neutral color</div>
   <div class="fs-18 margint20">Brand color</div>
+  <div class="padding20 margin20 bg-green">
+    <div class="bg-red text-blue">
+      ssdfsdf
+    </div>
+  </div>
   <div class="background_list paddingv10" v-for="(item, index) in background" :key="index">
     <div class="flex-container-col center margint30" v-for="(itemB, indexB) in 9" :key="indexB">
       <div class="background" :class="'bg-'+item+'_'+itemB+'00'"></div>
@@ -14,11 +19,6 @@
 </template>
 
 <script>
-function penson(name){
-  this.name = name;
-    console.log(this)
-}
-var p = new penson('this:::')
 export default {
   name: 'HelloWorld',
   data () {
