@@ -41,6 +41,11 @@ html {
   .text-capitalize     { text-transform: capitalize; }
   /*text type*/
   .text-bolder         {font-weight: bolder; }
+  @for $i from 1 through 9{
+	.text-weight#{$i * 100}{
+	  font-weight: $i * 100;
+	}
+  }
   .text-delete {text-decoration:line-through}
   .text-vcenter{
 	  display: table-cell;

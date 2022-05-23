@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="fs-18">颜色</div>
+  <h1>颜色</h1>
   <div class="text-dark fs-10">背景颜色/字体颜色/灰度字体颜色</div>
   <div class="fs-18 margint30">背景颜色</div>
   <div class="color_list">
