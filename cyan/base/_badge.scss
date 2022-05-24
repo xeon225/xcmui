@@ -59,15 +59,15 @@
     }
   }
   @each $colorName,$colorValue in $base-color-list{
-      &#{&-#{$colorName}}{
+      &.badge-#{$colorName}{
         background-color:$colorValue;
       }
-      &#{&}-flag#{&-#{$colorName}}{
+      &.badge-flag.badge-#{$colorName}{
         &:before{
           border-right-color: darken($colorValue,10%);
         }
       }
-      &#{&}-reverse#{&-#{$colorName}}{
+      &.badge-reverse.badge-#{$colorName}{
         background-color:white;
         border:1px solid map-get($font-color-list,#{$colorName});
         color:map-get($font-color-list,#{$colorName});
